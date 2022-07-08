@@ -5,4 +5,4 @@ Dashboard admin With NextJS and ReactJS
 
 ## Screenshot:
 
-<img src="Screenshot.png" alt='Screenshot project' />
+<img src="Screenshot2.png" alt='Screenshot project' />
