@@ -6,6 +6,7 @@ import SideBar from '../Components/SideBar';
 import SummaryStatics from '../Components/SummaryStatics';
 import Topbar from '../Components/Topbar';
 import StaticsCard from '../Components/StaticsCard';
+import AdsCard from '../Components/AdsCard';
 export default function Home() {
   const [isactive, setActive] = useState(true);
   const [count, setCount] = useState(0);
@@ -15,18 +16,16 @@ export default function Home() {
 
 
   return (
-    <div className='grid grid-cols-4 h-screen bg-gray-100 fixed'>
+    <div className='grid grid-cols-4 h-screen bg-gray-100 w-full fixed'>
       <SideBar />
-      <div className='col-span-3 p-5 pt-16 overflow-scroll'>
+      <div className='col-span-3 p-5 pt-16  overflow-y-scroll'>
 
         <Topbar />
         <SummaryStatics />
 
         <div className='grid grid-cols-3 mt-5 gap-7'>
           <StaticsCard />
-          <div className='col-spa n-1 from-blue-900 to-blue-700 bg-gradient-to-t rounded-md shadow-md  min-h-[400px]'>
-
-          </div>
+          <AdsCard />
         </div>
       </div>
 
