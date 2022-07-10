@@ -5,7 +5,7 @@ export default function SideBar() {
   return (
     <div className='col-span-1'>
       <Logo />
-      <div className='mt-10'>
+      <div className='mt-14'>
         <ul className='list-none '>
           <ListItem href="#" Text="Home" />
           <ListItem href="#" Text="Invoices" />

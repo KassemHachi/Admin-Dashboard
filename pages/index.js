@@ -22,9 +22,9 @@ export default function Home() {
 
 
   return (
-    <div className='grid grid-cols-4 h-screen bg-gray-100 w-full fixed'>
+    <div className='grid grid-cols-4 pt-2  h-screen bg-gray-100 w-full fixed'>
       <SideBar />
-      <div className='col-span-3 p-5 pt-16  overflow-y-scroll'>
+      <div className='col-span-3 p-4  overflow-y-scroll'>
 
         <Topbar />
         <SummaryStatics />
