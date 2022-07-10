@@ -10,7 +10,7 @@ export default function Topbar() {
       <div className='col-span-1'>
         <div className='w-full'><Input
           className='group focus-within:border-blue-600 border-2'
-          Placeholder="Search ..."
+          placeholder="Search ..."
           width="100%"
 
           contentLeft={<FaSearch className='group-focus-within:text-blue-600 transition-all ease-linear text-gray-300'
