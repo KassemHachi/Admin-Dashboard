@@ -30,6 +30,8 @@ export const options = {
     },
 };
 
+
+
 const labels = ['2022'];
 
 export const data = {
@@ -39,28 +41,31 @@ export const data = {
             label: 'Jan',
             data: labels.map(() => 800),
             backgroundColor: 'rgb(235,235,235)',
+            borderRadius: 20,
         },
         {
             label: 'Feb',
             data: labels.map(() => 650),
             backgroundColor: 'rgb(235,235,235)',
+            borderRadius: 20,
         },
         {
             label: 'Mars',
             data: labels.map(() => 785),
             backgroundColor: 'rgb(235,235,235)',
+            borderRadius: 20,
         },
         {
             label: 'April',
             data: labels.map(() => 1500),
             backgroundColor: 'rgb(78,128,237)',
-
+            borderRadius: 20,
         },
         {
             label: 'May',
             data: labels.map(() => 840),
             backgroundColor: 'rgb(235,235,235)',
-
+            borderRadius: 20,
         },
     ],
 };
