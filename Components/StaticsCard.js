@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import gradient from 'chartjs-plugin-gradient';
 import { Bar } from 'react-chartjs-2';
+import { flexbox } from '@mui/system';
 
 
 ChartJS.register(
@@ -23,27 +24,12 @@ ChartJS.register(
 );
 
 export const options = {
-    responsive: true,
+    responsive: false,
     plugins: {
         legend: {
             position: 'top',
         }, gradient,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    stepSize: 200
-                }
-            }],
-            xAxes: [{
-                id: 'x1'
-            },
-            {
-                id: 'x2',
-                display: false,
-                offset: true
-            }]
-        },
+
 
     },
 };
@@ -120,12 +106,12 @@ export const data = {
     ,
 };
 
-export default function StaticsCard() {
+export default function StaticsCard(props) {
     return (
-        <div className='col-span-2 bg-white rounded-md shadow-md  h-[450px] p-16'>
-            <h1 className='text-lg'>Monthly Revenue</h1>
-            <h1 className='text-3xl text-gray-400 '>$ <span className='font-bold text-gray-900'>1500</span></h1>
-            <Bar options={options} data={data} />
+        <div className={props.Class}>
+            <div className='p-8 md:p-16'><h1 className='text-base md:text-lg'>Monthly Revenue</h1>
+                <h1 className='text-lg md:text-3xl text-gray-400 '>$ <span className='font-bold text-gray-900'>1500</span></h1></div>
+            <div className='hidden md:inline-block'><Bar options={options} data={data} className="w-full ml-0 md:ml-5" /></div>
         </div>
     )
 }
