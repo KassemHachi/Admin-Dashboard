@@ -108,10 +108,10 @@ export const data = {
 
 export default function StaticsCard(props) {
     return (
-        <div className={props.Class}>
+        <div className={props.className}>
             <div className='p-8 md:p-16'><h1 className='text-base md:text-lg'>Monthly Revenue</h1>
                 <h1 className='text-lg md:text-3xl text-gray-400 '>$ <span className='font-bold text-gray-900'>1500</span></h1></div>
-            <div className='hidden md:inline-block'><Bar options={options} data={data} className="w-full ml-0 md:ml-5" /></div>
+            <Bar options={options} data={data} className="w-full ml-0 md:ml-5" />
         </div>
     )
 }
