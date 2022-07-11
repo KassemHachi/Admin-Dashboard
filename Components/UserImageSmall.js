@@ -8,8 +8,8 @@ export default function UserImageSmall() {
                 className=' w-10 h-auto rounded-full overflow-clip cursor-pointer hover:scale-125 hover:shadow-sm transition-all ease-linear '
             />
             <div>
-                <h4 className='text-black font-semibold text-base'>Jahn Doe</h4>
-                <h6 className='text-gray-400 font-medium text-sm'>Developer</h6>
+                <h4 className='text-black font-semibold text-sm md:text-base'>Jahn Doe</h4>
+                <h6 className='text-gray-400 font-medium text-xs md:text-sm'>Developer</h6>
             </div>
         </div>
     )
