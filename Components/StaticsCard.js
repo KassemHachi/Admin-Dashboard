@@ -61,7 +61,7 @@ export const data = {
     datasets: [
 
         {
-            label: 'Jan',
+            label: months[0],
             data: labels.map(() => dataValues[0]),
             gradient: {
                 backgroundColor: {
@@ -72,7 +72,7 @@ export const data = {
             borderRadius: 15,
         },
         {
-            label: 'Feb',
+            label: months[1],
             data: labels.map(() => dataValues[1]),
             borderRadius: 15,
             gradient: {
@@ -83,7 +83,7 @@ export const data = {
             },
         },
         {
-            label: 'Mars',
+            label: months[2],
             data: labels.map(() => dataValues[2]),
 
             borderRadius: 15,
@@ -95,7 +95,7 @@ export const data = {
             },
         },
         {
-            label: 'April',
+            label: months[3],
             data: labels.map(() => dataValues[3]),
             borderRadius: 15,
             gradient: {
@@ -107,7 +107,7 @@ export const data = {
 
         },
         {
-            label: 'May',
+            label: months[4],
             data: labels.map(() => dataValues[4]),
             borderRadius: 15,
             gradient: {
