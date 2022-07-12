@@ -1,7 +1,7 @@
 
 import { Input } from "@nextui-org/react";
 import { FaSearch } from 'react-icons/fa';
-import { RiNotificationLine } from 'react-icons/ri';
+import { RiNotification4Fill } from 'react-icons/ri';
 import UserImageSmall from "./UserImageSmall";
 import Badge from '@mui/material/Badge';
 export default function Topbar() {
@@ -21,7 +21,7 @@ export default function Topbar() {
       <div className='col-span-1 lg:col-span-3 '>
         <div className='flex gap-5 justify-end'>
           <Badge variant="dot" overlap="circular" className=" hover:scale-110  transition-all ease-linear" color="primary" >
-            <RiNotificationLine className=' w-7 h-auto text-gray-400  hover:text-[#0d79f5] cursor-pointer hover:scale-110  transition-all ease-linear ' />
+            <RiNotification4Fill className=' w-7 h-auto text-gray-400  hover:text-[#0d79f5] cursor-pointer hover:scale-110  transition-all ease-linear ' />
           </Badge>
           <UserImageSmall />
 
