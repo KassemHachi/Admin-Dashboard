@@ -1,17 +1,18 @@
 import React from 'react'
 import Logo from '../Components/Logo';
 import ListItem from '../Components/ListItem';
-export default function SideBar() {
+export default function SideBar(props) {
+  props.isActive = false;
   return (
     <div className='col-span-1'>
       <Logo />
       <div className='mt-14'>
         <ul className='list-none '>
-          <ListItem href="/" Text="Home" />
-          <ListItem href="/invoices" Text="Invoices" />
-          <ListItem href="#" Text="Clients" />
-          <ListItem href="#" Text="Products" />
-          <ListItem href="#" Text="Messages" />
+          <ListItem isActive={props.isActive} href="/" Text="Home" />
+          <ListItem isActive={props.isActive} href="/invoices" Text="Invoices" />
+          <ListItem isActive={props.isActive} href="#" Text="Clients" />
+          <ListItem isActive={props.isActive} href="#" Text="Products" />
+          <ListItem isActive={props.isActive} href="#" Text="Messages" />
         </ul>
       </div>
     </div>
