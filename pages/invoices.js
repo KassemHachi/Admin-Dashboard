@@ -10,7 +10,7 @@ export default function Invoices() {
             <div className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
-                <IvoicesTabel className="mt-10" />
+                <IvoicesTabel className="mt-7 shadow-md rounded-xl bg-white h-96  p-1" />
             </div>
         </div>
 
