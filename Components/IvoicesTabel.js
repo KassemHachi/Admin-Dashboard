@@ -34,9 +34,9 @@ const rows = [
     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-export default function IvoicesTabel() {
+export default function IvoicesTabel(props) {
     return (
-        <div style={{ height: 400, width: '100%' }}>
+        <div className={props.className} style={{ height: 400, width: '100%' }}>
             <DataGrid
                 rows={rows}
                 columns={columns}

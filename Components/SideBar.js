@@ -7,8 +7,8 @@ export default function SideBar() {
       <Logo />
       <div className='mt-14'>
         <ul className='list-none '>
-          <ListItem href="#" Text="Home" />
-          <ListItem href="#" Text="Invoices" />
+          <ListItem href="/" Text="Home" />
+          <ListItem href="/invoices" Text="Invoices" />
           <ListItem href="#" Text="Clients" />
           <ListItem href="#" Text="Products" />
           <ListItem href="#" Text="Messages" />
