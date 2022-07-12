@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div className='grid grid-cols-4 pt-2  h-screen bg-gray-100 w-full fixed'>
-      <SideBar />
+      <SideBar ActivePage={1} />
       <div className='col-span-3 p-4  overflow-y-scroll'>
 
         <Topbar />
