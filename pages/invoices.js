@@ -14,7 +14,7 @@ export default function Invoices() {
             <div className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
-                <div className='flex items-center justify-between px-3 mt-10'>
+                <div className='animate-fade-in-up flex items-center justify-between px-3 mt-10'>
                     <h1 className='text-2xl font-semibold '>Invoices list:</h1>
                     <ButtonGroup className=' ' variant="contained" aria-label="outlined primary button group">
                         <Button className='bg-transparent text-[#3c85f5] hover:bg-[#3c85f5] hover:text-white' ><AiOutlineFileAdd className='mr-2' /> Add</Button>
@@ -22,7 +22,7 @@ export default function Invoices() {
                         <Button className='bg-transparent text-[#3c85f5] hover:bg-[#e42f66] hover:text-white' ><RiDeleteBin6Line className='mr-2' /> Delete</Button>
                     </ButtonGroup>
                 </div>
-                <IvoicesTabel className="mt-7 shadow-md rounded-xl bg-white h-[600px]  p-1" />
+                <IvoicesTabel className="animate-fade-in-up mt-7 shadow-md rounded-xl bg-white h-[600px]  p-1" />
             </div>
         </div>
 
