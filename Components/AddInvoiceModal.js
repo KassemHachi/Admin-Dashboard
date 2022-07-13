@@ -30,12 +30,9 @@ export default function AddInvoiceModal(props) {
                 </label>
             </Modal.Body>
             <Modal.Footer>
-                <Button auto flat color="error" onClick={props.onClose}>
-                    Close
-                </Button>
-                <Button auto onClick={props.onClose}>
-                    Add
-                </Button>
+                <button className='py-2 px-4 hover:bg-[#e42f66] font-medium text-base rounded-lg hover:text-white transition-all .5s ease-linear' onClick={props.onClose}>Close</button>
+                <button className='py-2 px-5 bg-[#0072f5] font-medium text-base rounded-lg text-white transition-all .5s ease-linear' onClick={props.onClose}>Add</button>
+
             </Modal.Footer>
         </Modal>
     )
