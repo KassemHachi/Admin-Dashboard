@@ -7,6 +7,9 @@ import SummaryStatics from '../Components/SummaryStatics';
 import Topbar from '../Components/Topbar';
 import StaticsCard from '../Components/StaticsCard';
 import AdsCard from '../Components/AdsCard';
+import Layout from '../Components/Layout';
+import Side from '../Components/Side';
+
 import Chart from 'chart.js';
 
 export default function Home() {
@@ -22,9 +25,9 @@ export default function Home() {
 
 
   return (
-    <div className='grid grid-cols-4 pt-2  h-screen bg-gray-100 w-full fixed'>
-      <SideBar ActivePage={1} />
-      <div className='col-span-3 p-4  overflow-y-scroll'>
+    <Layout>
+      <Side ><SideBar ActivePage={1} /></Side>
+      <main className='col-span-3 p-4  overflow-y-scroll'>
 
         <Topbar />
         <SummaryStatics />
@@ -33,8 +36,8 @@ export default function Home() {
           <StaticsCard className='col-span-1 lg:col-span-2 bg-white rounded-md shadow-md  sm:h-fit md:h-full ' />
           <AdsCard className='col-span-1 flex-col justify-center text-center from-blue-900 to-blue-700 bg-gradient-to-t rounded-md shadow-md sm:h-fit md:h-full py-16 px-10' />
         </div>
-      </div>
+      </main>
 
-    </div>
+    </Layout>
   )
 }

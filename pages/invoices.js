@@ -1,15 +1,22 @@
 import React from 'react'
+
 import IvoicesTabel from '../Components/IvoicesTabel'
 import SideBar from '../Components/SideBar'
 import Topbar from '../Components/Topbar'
+import Layout from '../Components/Layout';
+import Side from '../Components/Side';
+
 import { Button, ButtonGroup } from '@mui/material'
 import { AiFillFileAdd, AiFillDelete, AiTwotoneEdit } from 'react-icons/ai';
 export default function Invoices() {
     return (
 
-        <div className='grid grid-cols-4 pt-2  h-screen bg-gray-100 w-full fixed'>
-            <SideBar ActivePage={2} />
-            <div className='col-span-3 p-4  overflow-y-scroll'>
+        <Layout >
+            <Side >
+                <SideBar ActivePage={2} />
+            </Side>
+
+            <main className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
                 <div className='animate-fade-in-up flex items-center justify-between px-3 mt-10'>
@@ -21,8 +28,8 @@ export default function Invoices() {
                     </ButtonGroup>
                 </div>
                 <IvoicesTabel className="animate-fade-in-up mt-7 shadow-md rounded-xl bg-white h-[600px]  p-1" />
-            </div>
-        </div>
+            </main>
+        </Layout>
 
     )
 }

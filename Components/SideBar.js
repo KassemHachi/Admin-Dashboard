@@ -9,7 +9,7 @@ export default function SideBar(props) {
 
 
   return (
-    <div className='col-span-1'>
+    <>
       <Logo />
       <div className='mt-14'>
         <ul className='list-none ml-5'>
@@ -20,6 +20,6 @@ export default function SideBar(props) {
           {props.ActivePage == 5 ? <ListItem isActive={true} href="#" Text="Messages" Icon={<RiMessage3Fill className='text-2xl mr-4' />} /> : <ListItem isActive={false} href="#" Text="Messages" Icon={<RiMessage3Fill className='text-2xl mr-4' />} />}
         </ul>
       </div>
-    </div>
+    </>
   )
 }
