@@ -25,18 +25,66 @@ const rows = [
     { id: 7, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
     { id: 8, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
     { id: 9, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 10, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 11, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 12, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 13, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 14, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 15, date: '22 Mars, 2022', client: 'Arya', amount: 6580 },
+    { id: 16, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 17, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 18, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 19, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 20, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 21, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 22, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 23, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 24, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 25, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 26, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 27, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 28, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 29, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 30, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 31, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 32, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 33, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 34, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 35, date: '22 Mars, 2022', client: 'Arya', amount: 6580 },
+    { id: 36, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 37, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 38, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 39, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 40, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 41, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 42, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 43, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 44, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 45, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 46, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 47, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 48, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 49, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 50, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 51, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 52, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 53, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 54, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 55, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
 ];
 
 export default function IvoicesTabel(props) {
+    const [count, setCount] = React.useState(10);
     return (
         <div className={props.className} style={{ width: '100%', }}>
             <DataGrid
                 rows={rows}
                 columns={columns}
-                pageSize={10}
-                rowsPerPageOptions={[10]}
-                className={"border-0"}
+                rowsPerPageOptions={[10, 50, 100]}
 
+                className={"border-0"}
+                onPageSizeChange={(e) => { setCount(e) }}
+                pageSize={count}
                 checkboxSelection
 
             />
