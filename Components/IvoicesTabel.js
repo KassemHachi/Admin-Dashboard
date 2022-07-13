@@ -65,18 +65,23 @@ const rows = [
     { id: 47, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
     { id: 48, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
     { id: 49, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
-
+    { id: 50, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
+    { id: 51, date: '24 Nov, 2022', client: 'Mark', amount: 2500 },
+    { id: 52, date: '31 Oct, 2022', client: 'Jacob', amount: 15000 },
+    { id: 53, date: '11 Jul, 2022', client: 'Ferrara', amount: 1570 },
+    { id: 54, date: '7 Dec, 2021', client: 'Rossini', amount: 740 },
+    { id: 55, date: '8 Oct, 2022', client: 'Harvey', amount: 650 },
 ];
 let PageNumbers = [];
 for (let i = 0; i < Object.keys(rows).length; i++) {
     switch (i) {
-        case 10:
+        case 11:
             PageNumbers.push(10)
             break;
-        case 50:
+        case 51:
             PageNumbers.push(50)
             break;
-        case 100:
+        case 101:
             PageNumbers.push(100)
             break;
         default:
@@ -94,7 +99,6 @@ export default function IvoicesTabel(props) {
                 rows={rows}
                 columns={columns}
                 rowsPerPageOptions={PageNumbers}
-
                 className={"border-0"}
                 onPageSizeChange={(e) => { setCount(e) }}
                 pageSize={count}
