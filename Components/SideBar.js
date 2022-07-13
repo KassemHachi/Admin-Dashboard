@@ -12,7 +12,7 @@ export default function SideBar(props) {
     <>
       <Logo />
       <div className='mt-14'>
-        <ul className='list-none ml-5'>
+        <ul className='list-none ml-0 md:ml-5'>
           {props.ActivePage == 1 ? <ListItem isActive={true} href="/" Text="Home" Icon={<AiFillHome className='text-2xl mr-4' />} /> : <ListItem isActive={false} href="/" Text="Home" Icon={<AiFillHome className='text-2xl mr-4' />} />}
           {props.ActivePage == 2 ? <ListItem isActive={true} href="/invoices" Text="Invoices" Icon={<BsFillFileEarmarkRuledFill className='text-2xl mr-4' />} /> : <ListItem isActive={false} href="/invoices" Text="Invoices" Icon={<BsFillFileEarmarkRuledFill className='text-2xl mr-4' />} />}
           {props.ActivePage == 3 ? <ListItem isActive={true} href="#" Text="Clients" Icon={<FaUserFriends className='text-2xl mr-4' />} /> : <ListItem isActive={false} href="#" Text="Clients" Icon={<FaUserFriends className='text-2xl mr-4' />} />}

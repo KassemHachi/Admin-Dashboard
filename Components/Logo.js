@@ -12,7 +12,7 @@ export default function Logo() {
         />
       </div>
 
-      <h2 className='w-fit text-3xl font-bold text-gray-800 '>
+      <h2 className='w-fit text-3xl font-bold text-gray-800 hidden md:inline'>
         Invo.</h2>
     </div>
   )

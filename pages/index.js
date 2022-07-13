@@ -26,7 +26,9 @@ export default function Home() {
 
   return (
     <Layout>
-      <Side ><SideBar ActivePage={1} /></Side>
+      <Side >
+        <SideBar ActivePage={1} />
+      </Side>
       <main className='col-span-3 p-4  overflow-y-scroll'>
 
         <Topbar />
