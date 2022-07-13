@@ -2,14 +2,15 @@ import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
-    { field: 'id', headerName: 'No', width: 70 },
-    { field: 'date', headerName: 'Date Created', width: 200 },
-    { field: 'client', headerName: 'Client', width: 200 },
+    { field: 'id', headerName: 'No', width: 70, },
+    { field: 'date', headerName: 'Date Created', minWidth: 250, },
+    { field: 'client', headerName: 'Client', width: 250 },
     {
         field: 'amount',
         headerName: 'Amount ($)',
         type: 'number',
-        width: 200,
+        width: 250,
+        resizable: true,
     },
 
 ];
@@ -35,7 +36,9 @@ export default function IvoicesTabel(props) {
                 pageSize={10}
                 rowsPerPageOptions={[10]}
                 className={"border-0"}
+
                 checkboxSelection
+
             />
         </div>
     );
