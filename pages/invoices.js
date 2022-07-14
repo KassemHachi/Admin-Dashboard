@@ -5,6 +5,7 @@ import SideBar from '../Components/SideBar'
 import Topbar from '../Components/Topbar'
 import Layout from '../Components/Layout';
 import Side from '../Components/Side';
+import Main from '../Components/Main';
 import AddInvoiceModal from '../Components/AddInvoiceModal';
 
 import { Button, ButtonGroup } from '@mui/material'

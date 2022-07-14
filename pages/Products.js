@@ -3,6 +3,7 @@ import Layout from '../Components/Layout'
 import Side from '../Components/Side'
 import SideBar from '../Components/SideBar'
 import Topbar from '../Components/Topbar'
+import Main from '../Components/Main';
 
 export default function Products() {
     return (

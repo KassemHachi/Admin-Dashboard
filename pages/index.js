@@ -9,27 +9,18 @@ import StaticsCard from '../Components/StaticsCard';
 import AdsCard from '../Components/AdsCard';
 import Layout from '../Components/Layout';
 import Side from '../Components/Side';
+import Main from '../Components/Main';
 
 import Chart from 'chart.js';
 
 export default function Home() {
-  const [isactive, setActive] = useState(true);
-  const [count, setCount] = useState(0);
-  const handlerClick = () => {
-    setCount(count + 1);
-
-  }
-
-
-
-
 
   return (
     <Layout>
       <Side >
         <SideBar ActivePage={1} />
       </Side>
-      <main className='col-span-3 p-4  overflow-y-scroll'>
+      <main className='col-span-3 p-4 lg:pr-12  overflow-y-scroll'>
 
         <Topbar />
         <SummaryStatics />
