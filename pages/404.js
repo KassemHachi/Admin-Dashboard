@@ -15,7 +15,7 @@ export default function Page404() {
                 <SideBar ActivePage={0} />
             </Side>
 
-            <main className='col-span-3 p-4  overflow-y-scroll'>
+            <Main className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
                 <div className='flex items-center justify-center  h-[70vh]'>
@@ -28,7 +28,7 @@ export default function Page404() {
                         </h2>
                     </div>
                 </div>
-            </main>
+            </Main>
         </Layout >
     )
 }

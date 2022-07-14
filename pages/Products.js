@@ -12,13 +12,13 @@ export default function Products() {
                 <SideBar ActivePage={4} />
             </Side>
 
-            <main className='col-span-3 p-4  overflow-y-scroll'>
+            <Main className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
                 <div className='animate-fade-in-up flex items-center justify-between  px-3 mt-10'>
                     <h1 className='text-lg md:text-2xl font-semibold w-fit'>Products list:</h1>
                 </div>
-            </main>
+            </Main>
         </Layout >
     )
 }

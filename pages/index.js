@@ -20,7 +20,7 @@ export default function Home() {
       <Side >
         <SideBar ActivePage={1} />
       </Side>
-      <main className='col-span-3 p-4 lg:pr-12  overflow-y-scroll'>
+      <Main className='col-span-3 p-4 lg:pr-12  overflow-y-scroll'>
 
         <Topbar />
         <SummaryStatics />
@@ -29,7 +29,7 @@ export default function Home() {
           <StaticsCard className='col-span-1 lg:col-span-2 bg-white rounded-md shadow-md  sm:h-fit md:h-full ' />
           <AdsCard className='col-span-1 flex-col justify-center text-center from-blue-900 to-blue-700 bg-gradient-to-t rounded-md shadow-md sm:h-fit md:h-full py-16 px-10' />
         </div>
-      </main>
+      </Main>
 
     </Layout>
   )

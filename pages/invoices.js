@@ -24,7 +24,7 @@ export default function Invoices() {
                 <SideBar ActivePage={2} />
             </Side>
 
-            <main className='col-span-3 p-4  overflow-y-scroll'>
+            <Main className='col-span-3 p-4  overflow-y-scroll'>
 
                 <Topbar />
                 <div className='animate-fade-in-up flex items-center justify-between  px-3 mt-10'>
@@ -37,7 +37,7 @@ export default function Invoices() {
                 </div>
                 <AddInvoiceModal open={visible} onClose={closeHandler} />
                 <IvoicesTabel className="animate-fade-in-up mt-7 shadow-md rounded-xl bg-white h-[600px]  p-1" />
-            </main>
+            </Main>
         </Layout >
 
     )
