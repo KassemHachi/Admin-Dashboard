@@ -10,7 +10,6 @@ const columns = [
         headerName: 'Amount ($)',
         type: 'number',
         width: 250,
-        resizable: true,
     },
 
 ];
