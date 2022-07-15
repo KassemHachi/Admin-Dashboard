@@ -10,7 +10,7 @@ export default function clients() {
     return (
         <Layout >
             <Side >
-                <SideBar ActivePage={4} />
+                <SideBar ActivePage={3} />
             </Side>
 
             <Main className='col-span-3 p-4  overflow-y-scroll'>
