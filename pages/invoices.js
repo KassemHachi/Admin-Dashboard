@@ -12,7 +12,7 @@ import { Button, ButtonGroup } from '@mui/material'
 import { AiFillFileAdd, AiFillDelete, AiTwotoneEdit } from 'react-icons/ai';
 export default function Invoices() {
     const [visible, setVisible] = React.useState(false);
-    const handler = () => setVisible(true);
+    const handler = () => { setVisible(true) };
 
     const closeHandler = () => {
         setVisible(false);

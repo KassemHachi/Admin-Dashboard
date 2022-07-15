@@ -17,7 +17,7 @@ export default function AddInvoiceModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <label > Invoice Number :
-                    <input type="number" value={54} readOnly className='py-2 read-only:bg-slate-100 px-1 w-full rounded-md border-2 border-gray-200 focus-within:border-[#0072f5] focus-within:outline-none' />
+                    <input type="number" value={Math.floor(Math.random() * (10000 - 1 + 1) + 1)} readOnly className='py-2 read-only:bg-slate-100 px-1 w-full rounded-md border-2 border-gray-200 focus-within:border-[#0072f5] focus-within:outline-none' />
                 </label>
                 <label > Date created :
                     <input type="date" className='py-2 px-1 w-full rounded-md border-2 border-gray-200 focus-within:border-[#0072f5] focus-within:outline-none' />
