@@ -11,8 +11,6 @@ import Layout from '../Components/Layout';
 import Side from '../Components/Side';
 import Main from '../Components/Main';
 
-import Chart from 'chart.js';
-
 export default function Home() {
 
   return (
