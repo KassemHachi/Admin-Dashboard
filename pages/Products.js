@@ -5,7 +5,7 @@ import SideBar from '../Components/SideBar'
 import Topbar from '../Components/Topbar'
 import Main from '../Components/Main';
 import ProductsTable from '../Components/ProductsTable'
-import AddInvoiceModal from '../Components/AddInvoiceModal'
+import AddProductModal from '../Components/AddProductModal'
 
 import { Button, ButtonGroup } from '@mui/material'
 import { AiFillFileAdd, AiFillDelete, AiTwotoneEdit } from 'react-icons/ai';
@@ -35,7 +35,7 @@ export default function products() {
                     </ButtonGroup>
                 </div>
                 <ProductsTable className="animate-fade-in-up mt-7 shadow-md rounded-xl bg-white h-[600px]  p-1" />
-                <AddInvoiceModal open={visible} onClose={closeHandler} />
+                <AddProductModal open={visible} onClose={closeHandler} />
             </Main>
         </Layout >
     )
