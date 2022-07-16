@@ -20,7 +20,7 @@ export default function Topbar() {
 
       <div className='col-span-1 lg:col-span-3 '>
         <div className='flex gap-5 justify-end'>
-          <Badge variant="dot" overlap="circular" className=" hover:scale-110  transition-all ease-linear" color="primary" >
+          <Badge badgeContent={Math.floor(Math.random() * (15 - 1 + 1) + 1)} overlap="circular" className=" hover:scale-110  transition-all ease-linear" color="primary" >
             <RiNotification4Fill className=' w-7 h-auto text-gray-400  hover:text-[#0d79f5] cursor-pointer hover:scale-110  transition-all ease-linear ' />
           </Badge>
           <UserImageSmall />
