@@ -15,11 +15,10 @@ export default function Home() {
 
   return (
     <>
-      <head>
+      <Head>
         <title>Admin Dashboard</title>
-      </head>
+      </Head>
       <Layout>
-
         <Side >
           <SideBar ActivePage={1} />
         </Side>
