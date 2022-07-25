@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SummeryStaticItem(props) {
   return (
-    <div className='col-span-1 my-4 lg:my-0  border-r-2 border-gray-200'>
+    <div className={"col-span-1 my-4 lg:my-0  "+ props.Border +" border-gray-200"}>
     <div className='grid grid-cols-2'>
       <div className='col-span-1 flex justify-center items-center'>
        { props.Icon}
