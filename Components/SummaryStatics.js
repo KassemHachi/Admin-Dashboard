@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiLineChartDown, BiLineChart } from 'react-icons/bi';
+
 export default function SummaryStatics() {
   return (
     <div className='mt-7 shadow-md grid grid-cols-2 lg:grid-cols-4  rounded-xl bg-white w-full min-h-[100px] px-2 py-8'>
