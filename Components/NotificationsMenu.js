@@ -9,7 +9,7 @@ export default function NotificationsMenu() {
       <Dropdown.Button color={"#f3f4f6"} className="p-0">
             <RiNotification4Fill className=' w-7 h-auto text-gray-400  group-hover:text-[#0d79f5] cursor-pointer hover:scale-110  transition-all ease-linear ' />
          </Dropdown.Button> </Badge>
-      <Dropdown.Menu aria-label="Dynamic Actions" className="w-16" items={menuItems}  css={{ $$dropdownMenuWidth: "300px" }}>
+      <Dropdown.Menu aria-label="Dynamic Actions" className="w-16" css={{ $$dropdownMenuWidth: "300px" }}>
  
       <Dropdown.Item className="py-8 mt-1"
             key={Math.floor(Math.random() * (1000 - 1 + 1) + 1)}

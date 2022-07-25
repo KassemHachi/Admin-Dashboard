@@ -3,15 +3,10 @@ import {  Input } from "@nextui-org/react";
 import { FaSearch } from 'react-icons/fa';
 
 import UserImageSmall from "./UserImageSmall";
-import Badge from '@mui/material/Badge';
+
 import NotificationsMenu from "./NotificationsMenu";
 export default function Topbar() {
-  const menuItems = [
-    { key: "new", name: "New File" },
-    { key: "copy", name: "Copy Link" },
-    { key: "edit", name: "Edit File" },
-    { key: "delete", name: "Delete File" },
-  ];
+
   return (
     <div className='grid  grid-cols-2 lg:grid-cols-4'>
       <div className='col-span-1'>
