@@ -15,17 +15,20 @@ export default function NotificationsMenu() {
           key={Math.floor(Math.random() * (1000 - 1 + 1) + 1)}
           color={"default"}
 
-        > <Tooltip content="09:03 20-06-2022" placement="left" arrow>
-            <div className="flex items-center ">
-              <Avatar
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                size="md"
-                className="mr-3"
-              />
-              Liked your photo
+        >
+          <div className="flex items-center "><Tooltip content="User Name" placement="left" arrow>
+            <Avatar
+              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              size="md"
+              className="mr-3"
+            /> </Tooltip>
+            <div>
+              <p>Liked your photo</p>
+              <span className='text-slate-400 text-xs'>19:33 25-07-2022</span>
             </div>
+          </div>
 
-          </Tooltip>
+
         </Dropdown.Item>
 
 
@@ -34,16 +37,19 @@ export default function NotificationsMenu() {
           key={Math.floor(Math.random() * (1000 - 1 + 1) + 1)}
           color={"default"}
 
-        ><Tooltip content="19:33 25-07-2022" placement="left" arrow>
-            <div className="flex items-center">
-              <Avatar
-                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                size="md"
-                className="mr-3"
-              />
-              Liked your photo
+        >
+          <div className="flex items-center"><Tooltip content="User Name" placement="left" arrow>
+            <Avatar
+              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              size="md"
+              className="mr-3"
+            /></Tooltip>
+            <div>
+              <p>Liked your photo</p>
+              <span className='text-slate-400 text-xs'>19:33 25-07-2022</span>
             </div>
-          </Tooltip>
+          </div>
+
 
         </Dropdown.Item>
 
