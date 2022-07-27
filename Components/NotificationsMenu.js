@@ -16,7 +16,7 @@ export default function NotificationsMenu() {
             color={"default"}
             
           > <Tooltip content="09:03 20-06-2022" placement="left" arrow>
-          <div className="flex items-center">
+          <div className="flex items-center ">
               <Avatar
           src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
           size="md"

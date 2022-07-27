@@ -1,22 +1,14 @@
-
-import {  Input } from "@nextui-org/react";
-import { FaSearch } from 'react-icons/fa';
-
+import SearchBar from "./SearchBar";
 import UserImageSmall from "./UserImageSmall";
-
 import NotificationsMenu from "./NotificationsMenu";
+
 export default function Topbar() {
 
   return (
     <div className='grid  grid-cols-2 lg:grid-cols-4'>
       <div className='col-span-1'>
         <div className='w-full '>
-          <Input
-            className='group focus-within:border-blue-600 border-2 '
-            placeholder="Search ..."
-            width="100%"
-            contentLeft={<FaSearch className='group-focus-within:text-blue-600 transition-all ease-linear text-gray-300' />}
-          />
+        <SearchBar/>
         </div>
       </div>
 
