@@ -1,4 +1,4 @@
-import { Avatar, Dropdown, Tooltip } from '@nextui-org/react'
+import { Avatar, Tooltip } from '@nextui-org/react'
 
 export default function NotificationMenuItem(props) {
     return (
