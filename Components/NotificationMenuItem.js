@@ -7,7 +7,7 @@ export default function NotificationMenuItem(props) {
             <Avatar
                 src={props.AvatarSrc}
                 size="md"
-                className="mr-3"
+                className="mr-3 !cursor-pointer"
             /> </Tooltip>
             <div>
                 <p>{props.NotifiationText}</p>
