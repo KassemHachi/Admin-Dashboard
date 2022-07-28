@@ -1,5 +1,5 @@
 import { Badge } from '@mui/material'
-import { Avatar, Dropdown, Tooltip } from '@nextui-org/react'
+import { Dropdown, } from '@nextui-org/react'
 import React from 'react'
 import { RiNotification4Fill } from 'react-icons/ri'
 import NotificationMenuItem from './NotificationMenuItem'
