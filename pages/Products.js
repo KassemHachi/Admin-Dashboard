@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import Layout from '../Components/Layout'
 import Side from '../Components/Side'
 import SideBar from '../Components/SideBar'
@@ -10,8 +10,8 @@ import AddProductModal from '../Components/AddProductModal'
 import { Button, ButtonGroup } from '@mui/material'
 import { AiFillFileAdd, AiFillDelete, AiTwotoneEdit } from 'react-icons/ai';
 
-export default function products() {
-    const [visible, setVisible] = React.useState(false);
+export default function Products() {
+    const [visible, setVisible] = useState(false);
     const handler = () => setVisible(true);
 
     const closeHandler = () => {
